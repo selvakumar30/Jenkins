@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="28.666972">
+<testcase classname="To Validated the Username and Password for Amazon Login" name="To Valid the username and password" time="16.435223">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;9688568[995]&gt; but was:&lt;9688568[84]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at org.stepdefinition.Amazon.toFillTheUsernameInTheUserField(Amazon.java:26)&#13;&#10;&#9;at ✽.To fill the Username in the user field(file:src/test/resources/FeatureFile/Amazon.feature:8)&#13;&#10;"><![CDATA[When User to launch the Amazon Application..................................passed
+And User to Click Signin button.............................................passed
+And To fill the Username in the user field..................................failed
+And User to Click Continue button...........................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<9688568[995]> but was:<9688568[84]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at org.stepdefinition.Amazon.toFillTheUsernameInTheUserField(Amazon.java:26)
+	at ✽.To fill the Username in the user field(file:src/test/resources/FeatureFile/Amazon.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="To Validate Login Functionality of Facebook" name="to check the login invalid Email and valid Password" time="6.431339">
+<system-out><![CDATA[When User to launch the Url.................................................passed
+And To fill the email in the User Field.....................................passed
+And To fill the password in the password Field..............................passed
+And user have to click login button.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Validate Login Functionality of Facebook" name="To check the valid Email and invalid Password" time="5.80041">
+<system-out><![CDATA[When User to launch the Url.................................................passed
+And To fill the email in the email field....................................passed
+And To fill the password in the Password field..............................passed
+And User to Click Login button..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
